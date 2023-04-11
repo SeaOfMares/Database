@@ -40,6 +40,8 @@
       </div>
     </form>
     <a href="create_user.php">Don't have an account? Create one now!</a><br><br>
+
+
     
   </div>
 
@@ -74,9 +76,8 @@ if (!empty($_POST)) {
       
       echo "Session logged_in is: ".$_SESSION['logged_in'];
       
-      // You can comment the next line (header) to check if the user was successfully logged in. 
-      // But it will not redirect to the student_menu file automatically.
-      header("Location: studentsCode/student_menu.php");
+      //If user is logged in display Menu
+      header("Location: project_menu.php");
     } else {
       echo "User not found.";
     }
