@@ -1,27 +1,7 @@
 <?php
 require_once('config.php');
-if (isset($_GET['id'])) {
-    $company_id = $_GET['id'];
 
-    $sql = "SELECT * FROM company WHERE Ccompanyid=$company_id;";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        $company_name = $row['Cname'];
-        $num_employees = $row['Cnumemployees'];
-        $owner_id = $row['Oownerid'];
-        $location_status = $row['Clocation_status'];
-    } else {
-        echo "Company not found.";
-        exit();
-    }
-} else {
-    echo "No company ID provided.";
-    exit();
-}
-
-if (isset($_POST['submit'])) {
+if (!empty($_POST)) {
     $company_id = $_POST['company_id'];
     $company_name = $_POST['company_name'];
     $num_employees = $_POST['num_employees'];
@@ -36,7 +16,25 @@ if (isset($_POST['submit'])) {
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
+
+    $conn->close();
+} else {
+    if (isset($_GET['company_id'])) {
+        $company_id = $_GET['company_id'];
+        $sql = "SELECT * FROM company WHERE Ccompanyid=$company_id";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                $company_name = $row['Cname'];
+                $num_employees = $row['Cnumemployees'];
+                $owner_id = $row['Oownerid'];
+                $location_status = $row['Clocation_status'];
+            }
+        }
+    } else {
+        header("Location: list_companies.php");
+    }
 }
 
-$conn->close();
 ?>

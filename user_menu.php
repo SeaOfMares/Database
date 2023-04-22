@@ -78,69 +78,17 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1><i class="fas fa-cubes"></i> Team 4 Project</h1>
-        <h2>Subdirectories</h2>
-        <ul>
-  <li>
-    <a href="DB4342_PhP_jlespinozag/" class="btn btn-primary">
-      <i class="fas fa-folder"></i> Jlespinozag
-    </a>
-  </li>
-  <li>
-    <a href="DB4342_PhP_rcarmoname/" class="btn btn-primary">
-      <i class="fas fa-folder"></i> Rcarmoname
-    </a>
-  </li>
-  <li>
-    <a href="DB4342_PhP_damares/" class="btn btn-primary">
-      <i class="fas fa-folder"></i> Damares
-    </a>
-  </li>
-  <li>
-    <a href="DB4342_PhP_javenegas8/" class="btn btn-primary">
-      <i class="fas fa-folder"></i> Javenegas8
-    </a>
-  </li>
-  <li>
-    <a href="team_4/" class="btn btn-primary">
-      <i class="fas fa-folder"></i> Team 4
-    </a>
-  </li>
-</ul>
-</div>
 <div class="container">
-    <h2>Project Menu</h2>
+    <h2>User Menu</h2>
     <ul style="color: white;">
-        <li>
-            <a href="add_company.php" class="btn btn-primary btn-icon">
-                <i class="fas fa-plus"></i> Add a new company
-            </a>
-        </li>
+       
         <li>
             <a href="list_companies.php" class="btn btn-secondary btn-icon">
                 <i class="fas fa-list"></i> List all companies
             </a>
         </li>
-        <li>
-            <a href="activities.php" class="btn btn-secondary btn-icon">
-                <i class="fas fa-list"></i> Activities
-            </a>
-        </li>
-        <li>
-            <a href="edit_company_form.php" class="btn btn-warning btn-icon">
-                <i class="fas fa-edit"></i> Edit a company
-            </a>
-        </li>
-        <li>
-            <a href="delete_company_form.php" class="btn btn-danger btn-icon">
-                <i class="fas fa-trash"></i> Delete a company
-            </a>
-        </li>
-     </li>
-            <a href="licenses.php" class="btn btn-dark btn-icon">
-                <i class="fas fa-license"></i> Licenses
-            </a>
+        
+        
     </ul>
 </div>
 

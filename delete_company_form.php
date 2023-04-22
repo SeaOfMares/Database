@@ -1,3 +1,7 @@
+<?php
+require_once('config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +13,17 @@
 <body>
     <div class="container">
         <h1>Delete Company</h1>
+        <?php if(isset($_SESSION['error'])): ?>
+            <div class="alert alert-danger" role="alert">
+                <?php echo $_SESSION['error']; ?>
+            </div>
+            <?php unset($_SESSION['error']); ?>
+        <?php endif; ?>
         <form action="delete_company.php" method="post">
             <div class="form-group">
                 <label for="company_id">Select Company to Delete:</label>
                 <select class="form-control" id="company_id" name="company_id" required>
                     <?php
-                    require_once('config.php');
                     $sql = "SELECT Ccompanyid, Cname FROM company;";
                     $result = $conn->query($sql);
 
@@ -25,7 +34,6 @@
                     } else {
                         echo "<option disabled>No companies available</option>";
                     }
-                    $conn->close();
                     ?>
                 </select>
             </div>
