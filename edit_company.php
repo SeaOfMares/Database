@@ -8,7 +8,7 @@ if (!empty($_POST)) {
     $owner_id = $_POST['owner_id'];
     $location_status = $_POST['location_status'];
 
-    $sql = "UPDATE company SET Cname='$company_name', Cnumemployees=$num_employees, Oownerid=$owner_id, Clocation_status='$location_status' WHERE Ccompanyid=$company_id;";
+    $sql = "UPDATE company SET Cname='$company_name', Cnumemployees=$num_employees, Clocation_status='$location_status' WHERE Ccompanyid=$company_id;";
     $result = $conn->query($sql);
 
     if ($result === TRUE) {

@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Company</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+     body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: #F4F4F4;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://i.imgur.com/oS6NBVZ.jpeg");
+    }
+
+    table {
+  background-color: #FFFFFF;
+}
+  </style>
 </head>
 <body>
     <div class="container">
