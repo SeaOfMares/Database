@@ -95,22 +95,22 @@ examples
         <h2>Subdirectories</h2>
         <ul>
   <li>
-    <a href="DB4342_PhP_jlespinozag/" class="btn btn-primary">
+    <a href="jose.php" class="btn btn-primary">
       <i class="fas fa-folder"></i> Jlespinozag
     </a>
   </li>
   <li>
-    <a href="DB4342_PhP_rcarmoname/" class="btn btn-primary">
+    <a href="ruben.php" class="btn btn-primary">
       <i class="fas fa-folder"></i> Rcarmoname
     </a>
   </li>
   <li>
-    <a href="DB4342_PhP_damares/" class="btn btn-primary">
+    <a href="david.php" class="btn btn-primary">
       <i class="fas fa-folder"></i> Damares
     </a>
   </li>
   <li>
-    <a href="DB4342_PhP_javenegas8/" class="btn btn-primary">
+    <a href="javier.php" class="btn btn-primary">
       <i class="fas fa-folder"></i> Javenegas8
     </a>
   </li>
@@ -143,7 +143,12 @@ examples
             <a href="licenses.php" class="btn btn-dark btn-icon">
                 <i class="fas fa-license"></i> Licenses Registered
             </a>
-    </ul>
+    </li>
+    <li>
+            <a href="user_menu.php" class="btn btn-success btn-icon">
+                <i class="fas fa-trash"></i> User Test!
+            </a>
+        </li>
 </div>
 
 <!-- Font Awesome icons https://fontawesome.com/ -->

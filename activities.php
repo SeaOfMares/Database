@@ -81,7 +81,7 @@ examples
     $conn->close();
     ?>
     <div class="d-flex justify-content-center mt-4">
-        <a href="user_menu.php" class="btn btn-primary">Back to Main Menu</a>
+        <a href="ruben.php" class="btn btn-primary">Back to Main Menu</a>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

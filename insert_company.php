@@ -17,6 +17,12 @@ $company_name = $_POST['company_name'];
 $num_employees = $_POST['num_employees'];
 $owner_id = $_POST['owner_id'];
 $location_status = $_POST['location_status'];
+$owner_name = $_POST['owner_name'];
+$owner_dob = $_POST['owner_dob'];
+$owner_email = $_POST['owner_email'];
+$owner_gender = $_POST['owner_gender'];
+$owner_ha = $_POST['owner_ha'];
+$owner_phone = $_POST['owner_phone'];
 
 // Check if the owner id already exists in the database
 $query_check_owner_id = "SELECT COUNT(*) AS count FROM company WHERE Oownerid = $owner_id";
@@ -32,7 +38,7 @@ if ($count_owner_id > 0) {
     $result_max_id = $conn->query($query_max_id);
     $row_max_id = $result_max_id->fetch_assoc();
     $new_id = $row_max_id['max_id'] + 1;
-
+    $sql = "INSERT INTO owner (Oownerid, Oname, Ogender, Odob, Ohomeaddress, Ophonenumber, Oemail, Ccompanyid) VALUES ($owner_id, $owner_name, $owner_gender, $owner_dob, $owner_ha, $owner_phone, $owner_email, $new_id);";
     $sql = "INSERT INTO company (Ccompanyid, Cname, Cnumemployees, Oownerid, Clocation_status) VALUES ($new_id, '$company_name', $num_employees, $owner_id, '$location_status');";
     $result = $conn->query($sql);
 

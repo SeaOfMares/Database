@@ -94,7 +94,11 @@ examples
     <h2>Welcome To El Paso County Tourism Department</h2>
     <ul style="color: white;">
        
-     
+        <li>
+            <a href="activities.php" class="btn btn-secondary btn-icon">
+                <i class="fas fa-list"></i> Learn About our Activities!
+            </a>
+        </li>
 
         <li>
             <a href="add_company.php" class="btn btn-primary btn-icon">

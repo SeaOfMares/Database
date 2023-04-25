@@ -26,6 +26,9 @@ examples
             background-size: cover;
             background-image: url("https://i.imgur.com/oS6NBVZ.jpeg");
     }
+    table {
+  background-color: #FFFFFF;
+}
   </style>
 </head>
 <body>

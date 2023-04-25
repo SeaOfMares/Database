@@ -24,6 +24,16 @@ require_once('config.php');
     <title>Delete Company</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+<style>
+     body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: #F4F4F4;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://i.imgur.com/oS6NBVZ.jpeg");
+    }
+  </style>
 <body>
     <div class="container">
         <h1>Delete Company</h1>
@@ -53,6 +63,9 @@ require_once('config.php');
             </div>
             <button type="submit" class="btn btn-danger">Delete</button>
         </form>
+    </div>
+    <div class="d-flex justify-content-center mt-4">
+        <a href="project_menu.php" class="btn btn-primary">Back to Main Menu</a>
     </div>
 </body>
 </html>

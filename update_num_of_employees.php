@@ -11,6 +11,9 @@ examples
 * Modified by: Ruben Carmona
 */
 -->
+<?php
+require_once('config.php');
+
 $company_id = 1; // Replace with the actual company_id you want to update
 $new_num_employees = 50; // Replace with the new number of employees
 
@@ -22,3 +25,5 @@ if ($result === TRUE) {
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
+$conn->close();
+?>

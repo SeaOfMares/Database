@@ -94,22 +94,17 @@ examples
     <h2>Welcome To El Paso County Tourism Department</h2>
     <ul style="color: white;">
        
-     
-
         <li>
-            <a href="add_company.php" class="btn btn-primary btn-icon">
-                <i class="fas fa-list"></i> Register Your Company!
-            </a>
-        </li>
-
-        <li>
-            <a href="get_license.php" class="btn btn-info btn-icon">
-                <i class="fas fa-list"></i> Sign Up For a License!
+            <a href="licenses.php" class="btn btn-secondary btn-icon">
+                <i class="fas fa-list"></i> Licenses
             </a>
         </li>
         
         
     </ul>
+</div>
+<div class="d-flex justify-content-center mt-4">
+        <a href="project_menu.php" class="btn btn-primary">Back to Main Menu</a>
 </div>
 
 <!-- Font Awesome icons https://fontawesome.com/ -->

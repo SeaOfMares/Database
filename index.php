@@ -78,6 +78,7 @@ examples
 </head>
 <body>
   <div class="container">
+    <h1>Welcome To El Paso County Tourism Department!</h1>
     <h1>User Login</h1>
     <form action="index.php" method="post">
       <div class="form-group">
@@ -126,7 +127,7 @@ if (!empty($_POST)) {
         header("Location: project_menu.php");
         die();
       } else {
-        header("Location: user_menu.php");
+        header("Location: project_menu.php");
         die();
       }
     } else {
